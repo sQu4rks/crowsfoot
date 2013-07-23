@@ -1,6 +1,6 @@
 # crowsfoot
 
-A theme for the [Pelican](http://www.getpelican.com) static site generator.
+A theme for the [Pelican](http://getpelican.com) static site generator.
 Looks good, puts words on the internet, doesn't do anything fancy.
 
 ## Installation
@@ -23,6 +23,17 @@ services by defining the appropriate config variables
 * `FB_ADDRESS` (Facebook)
 
 An RSS icon will also show on the nav if `FEED_RSS` is set.
+
+There are a few other config variables you souhld probably set
+
+* `PROFILE_IMAGE_URL`: Link to your profile image. This should look
+good at 175px square.
+* `LICENSE_URL`: Link to the text of the default license for your content.
+* `LICENSE_NAME`: The name of your default license. This will be shown in
+the footer.
+* `SHOW_ARTICLE_AUTHOR`: It's silly to show the author of every post on a
+single author website, so you can turn this behavior off by setting this
+to `False`
 
 ## License
 
