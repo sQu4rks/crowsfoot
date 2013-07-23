@@ -1,0 +1,147 @@
+@import url(pygments.css);
+
+/* General stuff. */
+
+@media screen and (max-width:887px) {
+    body {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:888px) {
+    body {
+        width: 800px;
+    }
+}
+
+html { /* This stuff is for the sticky footer. */
+    min-height:100%;
+    position:relative;
+}
+
+body {
+    background-color:#fafafa;
+    font-family:'Open Sans';
+    margin: 20px auto 60px auto; /* For sticky footer. */
+}
+
+/* Top banner. */
+
+.sitetitle {
+    position:relative; /* Hack to dodge problems with :hover. */
+    right: 20px; /* Hack to dodge problems with :hover. */
+    padding: 20px; /* Hack to dodge problems with :hover. */
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.sitebanner {
+    display: inline-block;
+    position: relative;
+    bottom: 13px; /* Just doing this instead of a vertical centering hack. */
+}
+
+.siteimage {
+    margin-right: 30px;
+    /* Padding is here instead of on the banner
+     * so things look good when there's no image. */
+    background-size: 150px 150px;;
+}
+
+.sitesubtitle {
+    color: #000;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+/* The navbar. */
+
+nav {
+    font-size: 1.3em;
+}
+
+nav ul {
+    padding: 0; /* Default style is padded. */
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Links. */
+
+a { /* Generic link styling, greyish and underlined. */
+    color: #2E2E2E;
+    text-decoration: underline;
+}
+
+nav a, .entry-title a, footer a, a.siteimage, address a {
+    /* Links that aren't just in content areas shouldn't be underlined */
+    text-decoration: none;
+}
+
+a:hover { /* Hover style: transition to orange. Cool! */
+    -o-transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+    color: orange;
+}
+
+/* List of articles. */
+
+.summary {
+    font-family: Merriweather;
+    font-weight: 300;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+/* Code in posts. */
+
+.codehilite, .highlight { /* Put code blocks in the right place. */
+    width: 600px;
+    margin: 0 0 0 50px;
+}
+
+pre {
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: 'Source Code Pro';
+    font-size: .85em;
+    margin: auto;
+    padding: 1em;
+}
+
+code {
+    font-family: 'Source Code Pro';
+    font-size: .85em;
+}
+
+/* Little post-info thing w/ date, author, etc. */
+
+.post-info {
+    border-top: 50px;
+    color: #666;
+    font-size: .7em;
+    padding-bottom: 5px;
+}
+
+.entry-title {
+    margin: 0; /* Get rid of default h3 margin. */
+}
+
+/* Footer Styles. */
+
+footer {
+    bottom: 0;
+    color: grey;
+    font-size: .7em;
+    height: 40px;
+    position: absolute;
+}
