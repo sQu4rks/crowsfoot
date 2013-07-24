@@ -38,7 +38,7 @@ to `False`
 
 ##Screenshot
 
-![crowsfoot](https://github.com/porterjamesj/crowsfoot/master/screenshot.png)
+![crowsfoot](https://github.com/porterjamesj/crowsfoot/master/screenshot.jpg)
 
 ## License
 
