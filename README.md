@@ -14,7 +14,7 @@ Then set the pelican config variable `THEME` to the cloned path.
 All of your pages and menuitems are dispalyed in the nav.
 
 You can also add icon links to your profile on various internet
-services by defining the appropriate config variables
+services by defining the appropriate config variables:
 
 * `EMAIL_ADDRESSS`
 * `GITHUB_ADDRESS`
@@ -24,16 +24,21 @@ services by defining the appropriate config variables
 
 An RSS icon will also show on the nav if `FEED_RSS` is set.
 
-There are a few other config variables you souhld probably set
+There are a few other config variables you should probably set
 
-* `PROFILE_IMAGE_URL`: Link to your profile image. This should look
-good at 175px square.
+* `PROFILE_IMAGE_URL`: Link to a profile image for the site. This should look
+good at 200px square or thereabouts. If this isn't set, no image will be
+displayed.
 * `LICENSE_URL`: Link to the text of the default license for your content.
 * `LICENSE_NAME`: The name of your default license. This will be shown in
 the footer.
 * `SHOW_ARTICLE_AUTHOR`: It's silly to show the author of every post on a
 single author website, so you can turn this behavior off by setting this
 to `False`
+
+##Screenshot
+
+![crowsfoot](https://github.com/porterjamesj/crowsfoot/master/screenshot.png)
 
 ## License
 
