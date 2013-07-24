@@ -1,74 +1,93 @@
 @import url(pygments.css);
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
 
 /* General stuff. */
 
-@media screen and (max-width:887px) {
-    body {
-        width: 90%;
-    }
-}
-
-@media screen and (min-width:888px) {
-    body {
-        width: 800px;
-    }
+body {
+    width: 800px;
 }
 
 html { /* This stuff is for the sticky footer. */
     min-height:100%;
     position:relative;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
     background-color:#fafafa;
     font-family:'Open Sans';
-    margin: 20px auto 60px auto; /* For sticky footer. */
+    margin: 20px auto 100px auto; /* For sticky footer. */
 }
 
-/* Top banner. */
-
-.sitetitle {
-    position:relative; /* Hack to dodge problems with :hover. */
-    right: 20px; /* Hack to dodge problems with :hover. */
-    padding: 20px; /* Hack to dodge problems with :hover. */
-    font-family: 'Merriweather';
-    font-weight: 300;
-    font-size: 2em;
-    text-decoration: none;
-}
+/* Site header. */
 
 .sitebanner {
-    display: inline-block;
     position: relative;
-    bottom: 13px; /* Just doing this instead of a vertical centering hack. */
+    font-size: 18;
+    top: 15px;
+}
+
+.siteheader {
+    margin-bottom: 30px;
+    overflow: visible;
+    height: 200px;
 }
 
 .siteimage {
-    margin-right: 30px;
-    /* Padding is here instead of on the banner
-     * so things look good when there's no image. */
-    background-size: 150px 150px;;
+    float: left;
+    width: 230px;
+}
+
+.sitetitle {
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 4em;
+    padding-left: 10px; /* Hack to dodge :hover issue. */
+    position: relative; /* Hack to dodge :hover issue. */
+    left: -10px; /* Hack to dodge :hover issue. */
 }
 
 .sitesubtitle {
     color: #000;
     font-size: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    /* padding-left: 30px; */
 }
 
 /* The navbar. */
 
-nav {
+.menu {
     font-size: 1.3em;
+    /* padding-left: 30px; */
 }
 
-nav ul {
-    padding: 0; /* Default style is padded. */
-}
-
-nav li {
+.menu li {
     display: inline;
     margin-right: 10px;
+}
+
+/* Article list on index page. */
+
+.posttitle {
+    font-size: 1.6em;
+}
+
+.postinfo {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: .7em;
+}
+
+.postsummary {
+    font-family: Merriweather;
+    font-weight: 300;
+}
+
+.post {
+    margin-bottom: 20px;
 }
 
 /* Links. */
@@ -76,72 +95,109 @@ nav li {
 a { /* Generic link styling, greyish and underlined. */
     color: #2E2E2E;
     text-decoration: underline;
+    -o-transition:color .2s ease-in-out;
+    -webkit-transition:color .2s ease-in-out;
+    -moz-transition:color .2s ease-in-out;
+    transition:color .2s ease-in-out;
 }
 
-nav a, .entry-title a, footer a, a.siteimage, address a {
+.nodec {
     /* Links that aren't just in content areas shouldn't be underlined */
     text-decoration: none;
 }
 
 a:hover { /* Hover style: transition to orange. Cool! */
-    -o-transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    transition: .2s;
+    -o-transition:color .2s ease-in-out;
+    -webkit-transition:color .2s ease-in-out;
+    -moz-transition:color .2s ease-in-out;
+    transition:color .2s ease-in-out;
     color: orange;
 }
 
-/* List of articles. */
+/* Generic to all content. */
 
-.summary {
-    font-family: Merriweather;
-    font-weight: 300;
+.content ol, .content ul {
+    position: relative;
+    left: 40px;
+    padding-bottom: 20px;
 }
 
-.entry {
-    margin-bottom: 20px;
+/* Article */
+
+.article {
+    margin-top: 30px;
 }
 
-/* Code in posts. */
+/* Lists */
+
+.article * li {
+    line-height: 1.1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+/* Paragraphs. */
+
+.article p {
+    line-height: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+/* Headers. */
+
+.article h1 {
+    padding-bottom: 1em;
+    font-size: 1.4em;
+}
+
+.article h2 {
+    padding-bottom: 0.9em;
+    font-size: 1.2em;
+}
+
+.article h3 {
+    padding-bottom: 0.8em;
+    font-size: 1em;
+}
+
+/* Images */
+
+.content * img {
+    display: block;
+    margin: 0 auto 0 auto;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Code */
 
 .codehilite, .highlight { /* Put code blocks in the right place. */
     width: 600px;
     margin: 0 0 0 50px;
-}
-
-pre {
+    margin-bottom: 20px;
+    overflow: auto;
     border: 1px solid grey;
     border-radius: 5px;
+}
+
+.article pre {
     font-family: 'Source Code Pro';
     font-size: .85em;
     margin: auto;
     padding: 1em;
 }
 
-code {
+.article code {
     font-family: 'Source Code Pro';
     font-size: .85em;
 }
 
-/* Little post-info thing w/ date, author, etc. */
-
-.post-info {
-    border-top: 50px;
-    color: #666;
-    font-size: .7em;
-    padding-bottom: 5px;
-}
-
-.entry-title {
-    margin: 0; /* Get rid of default h3 margin. */
-}
-
-/* Footer Styles. */
+/* Footer at page bottom */
 
 footer {
     bottom: 0;
     color: grey;
     font-size: .7em;
-    height: 40px;
+    height: 30px;
     position: absolute;
 }

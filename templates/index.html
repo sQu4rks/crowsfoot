@@ -2,37 +2,35 @@
 
 {% block content %}
 
-  <section id="content">
+<section class="content">
 
-    <ol id="post-list">
+  <ol id="postlist">
 
-      {% for article in articles_page.object_list %}
-        <li class="entry">
-          <article >
-            <header>
-              <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}"
-                                         rel="bookmark"
-                                         class="nodec"
-                                         title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-              </h2>
-            </header>
+    {% for article in articles_page.object_list %}
+    <li class="post">
+        <header class="posttitle">
+          <h3><a href="{{ SITEURL }}/{{ article.url }}"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+          </h3>
+        </header>
 
-            <div class="post-info">
-              <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-              {% if article.author and SHOW_ARTICLE_AUTHOR %}
-                <address class="vcard author">By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>
-              {% endif %}
-            </div><!-- /.post-info -->
+        <div class="postinfo">
+          <p class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </p>
+          {% if article.author and SHOW_ARTICLE_AUTHOR %}
+          <address class="vcard author">By <a "nodec" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>
+          {% endif %}
+        </div><!-- /.postinfo -->
 
-            <div class="summary"> {{ article.summary }} </div><!-- /.entry-content -->
-          </article>
-        </li>
-      {% endfor %}
+        <div class="postsummary"> {{ article.summary }} </div>
+    </li>
+    {% endfor %}
 
-    </ol><!-- /#posts-list -->
+  </ol><!-- /#post-list -->
 
-    {% include 'pagination.html' %}
+  {% include 'pagination.html' %}
 
-  </section><!-- /#content -->
+</section><!-- /#content -->
 
 {% endblock content %}

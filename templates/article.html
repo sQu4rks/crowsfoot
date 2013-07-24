@@ -2,34 +2,30 @@
 
 {% block content %}
 
-  <section id="content">
+<section class="content">
 
-    <header>
-      <h1 class="entry-title">
-        <a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-           {{ article.title }}
-        </a>
-      </h1>
-      {% import 'translations.html' as translations with context %}
-      {{ translations.translations_for(article) }}
-    </header>
+  <h3 class="posttitle">
+    <a class="nodec" href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+      {{ article.title }}
+    </a>
+  </h3>
 
-    <div class="post-info">
-      <abbr class="published" title="{{ article.date.isoformat() }}">
-        {{ article.locale_date }}
-      </abbr>
+  <div class="postinfo">
+    <p class="published" title="{{ article.date.isoformat() }}">
+      {{ article.locale_date }}
+    </p>
 
-      {% if article.author and SHOW_ARTICLE_AUTHOR %}
-        <address class="vcard author">
-          By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-        </address>
-      {% endif  %}
-    </div><!-- .post-info -->
+    {% if article.author and SHOW_ARTICLE_AUTHOR %}
+    <address class="vcard author">
+      By <a class="nodec" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+    </address>
+    {% endif  %}
+  </div><!-- .postinfo -->
 
-    <div class="entry-content">
-      {{ article.content }}
-    </div><!-- .entry-content -->
+  <div class="article">
+    {{ article.content }}
+  </div><!-- .content -->
 
-  </section>
+</section>
 
 {% endblock %}
