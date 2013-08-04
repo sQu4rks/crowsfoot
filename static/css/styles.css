@@ -184,6 +184,16 @@ sub {
     height: auto;
 }
 
+/* Blockquotes */
+
+.article blockquote {
+    font-size: 0.9em;
+    font-style: italic;
+    border-left: 3px solid #ccc;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
 /* Code */
 
 .codehilite, .highlight { /* Put code blocks in the right place. */
