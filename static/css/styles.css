@@ -122,6 +122,21 @@ a:hover { /* Hover style: transition to orange. Cool! */
     padding-bottom: 20px;
 }
 
+/* Make super and subscipts look reasonable. */
+
+sup, sub { vertical-align: 0;
+           position: relative; }
+
+sup {
+    bottom: 1ex;
+    font-size: 0.6em;
+}
+
+sub {
+    top: 0.8ex;
+    font-size: 0.6em;
+}
+
 /* Article */
 
 .article {
