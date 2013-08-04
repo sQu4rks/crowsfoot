@@ -175,6 +175,12 @@ sub {
     font-size: 1em;
 }
 
+/* Footnotes. */
+
+.article .footnote {
+    font-size: 0.8em;
+}
+
 /* Images */
 
 .content * img {
