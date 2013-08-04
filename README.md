@@ -40,6 +40,9 @@ to `False`
 
 ![crowsfoot](https://raw.github.com/porterjamesj/crowsfoot/master/screenshot.jpg)
 
+##Live Demo
+
+[my website](http://jamesporter.me/)
 
 ## License
 
