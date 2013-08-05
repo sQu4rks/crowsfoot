@@ -130,8 +130,10 @@ a:hover { /* Hover style: transition to orange. Cool! */
 
 /* Make super and subscipts look reasonable. */
 
-sup, sub { vertical-align: 0;
-           position: relative; }
+sup, sub {
+    vertical-align: 0;
+    position: relative;
+}
 
 sup {
     bottom: 1ex;
@@ -204,6 +206,7 @@ sub {
     border-left: 3px solid #ccc;
     margin-left: 30px;
     padding-left: 10px;
+    margin-bottom: 30px;
 }
 
 /* Code */
