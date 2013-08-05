@@ -74,6 +74,12 @@ body {
     font-size: 1.6em;
 }
 
+.posttitle a {
+    padding-left: 10px; /* Hack to dodge :hover issue. */
+    position: relative; /* Hack to dodge :hover issue. */
+    left: -10px; /* Hack to dodge :hover issue. */
+}
+
 .postinfo {
     margin-top: 5px;
     margin-bottom: 10px;
