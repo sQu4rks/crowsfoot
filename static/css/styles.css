@@ -1,5 +1,5 @@
 @import url(pygments.css);
-@import url(http://reset5.googlecode.com/hg/reset.min.css);
+@import url(reset.css);
 
 /* General stuff. */
 
@@ -225,6 +225,7 @@ sub {
     font-size: .85em;
     margin: auto;
     padding: 1em;
+    line-height: 120%;
 }
 
 .article code {
