@@ -212,6 +212,7 @@ sub {
 /* Code */
 
 .codehilite, .highlight { /* Put code blocks in the right place. */
+    background-color:#fefefe;
     width: 800px;
     margin: 0 0 0 0;
     margin-bottom: 20px;
