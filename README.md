@@ -16,7 +16,7 @@ All of your pages and menuitems are dispalyed in the nav.
 You can also add icon links to your profile on various internet
 services by defining the appropriate config variables:
 
-* `EMAIL_ADDRESSS`
+* `EMAIL_ADDRESS`
 * `GITHUB_ADDRESS`
 * `SO_ADDRESS` (Stackoverflow)
 * `TWITTER_ADDRESS`
