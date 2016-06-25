@@ -162,23 +162,26 @@ sub {
 /* Paragraphs. */
 
 .article p {
-    line-height: 1.3em;
+    line-height: 2.0em;
     margin-bottom: 1.5em;
 }
 
 /* Headers. */
 
 .article h1 {
+    line-height: 2.0em;
     padding-bottom: 1em;
     font-size: 1.4em;
 }
 
 .article h2 {
+    line-height: 2.0em;
     padding-bottom: 0.9em;
     font-size: 1.2em;
 }
 
 .article h3 {
+    line-height: 2.0em
     padding-bottom: 0.8em;
     font-size: 1em;
 }
@@ -201,7 +204,7 @@ sub {
 /* Blockquotes */
 
 .article blockquote {
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-style: italic;
     border-left: 3px solid #ccc;
     margin-left: 30px;
@@ -223,7 +226,7 @@ sub {
 
 .article pre {
     font-family: 'Source Code Pro';
-    font-size: .8em;
+    font-size: 0.7em;
     margin: auto;
     padding: 1em;
     line-height: 120%;
