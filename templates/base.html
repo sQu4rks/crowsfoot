@@ -10,6 +10,9 @@
       <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/icons.css"/>
       <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/styles.css"/>
       <meta charset="utf-8" />
+      {% for title, link in SOCIAL %}
+      <a class="nodec" rel="me" href="{{ link }}"></a>
+      {% endfor %}
       {% if FEED_ATOM %}
         <link href="/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
       {% endif %}
