@@ -36,11 +36,11 @@ the footer.
 single author website, so you can turn this behavior off by setting this
 to `False`
 
-##Screenshot
+## Screenshot
 
 ![crowsfoot](https://raw.github.com/porterjamesj/crowsfoot/master/screenshot.jpg)
 
-##Live Demo
+## Live Demo
 
 [my website](http://jamesporter.me/)
 
