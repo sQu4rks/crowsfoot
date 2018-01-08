@@ -1,3 +1,10 @@
+🚨  **Looking for maintainer** 🚨
+
+I no longer use this theme on my website, and am no longer interested
+in maintaining it. I'd love to pass maintainership on to someone else
+who uses the theme and is excited about maintaining
+it. [Email me](mailto:james@jamesporter.me) if you're interested!
+
 # crowsfoot
 
 This is a fork with my modifications of @porterjamesj's awesome pelican theme. I 
@@ -43,7 +50,7 @@ the footer.
 single author website, so you can turn this behavior off by setting this
 to `False`
 
-##Screenshot
+## Screenshot
 
 ![crowsfoot](https://raw.github.com/porterjamesj/crowsfoot/master/screenshot.jpg)
 
