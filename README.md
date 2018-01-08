@@ -1,5 +1,12 @@
 # crowsfoot
 
+This is a fork with my modifications of @porterjamesj's awesome pelican theme. I 
+
+* Increased the font size and spacing between lines
+* Added justified text and hyphens
+
+The rest is the same as in the original theme. 
+
 A theme for the [Pelican](http://getpelican.com) static site generator.
 Looks good, puts words on the internet, doesn't do anything fancy.
 
@@ -42,7 +49,7 @@ to `False`
 
 ##Live Demo
 
-[my website](http://jamesporter.me/)
+[my website](http://marcel.nlogn.org/)
 
 ## License
 

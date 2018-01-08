@@ -4,7 +4,7 @@
 /* General stuff. */
 
 body {
-    width: 800px;
+    width: 900px;
 }
 
 html { /* This stuff is for the sticky footer. */
@@ -34,6 +34,10 @@ body {
     height: 200px;
 }
 
+.bold-initial {
+    font-weight: bold;
+}
+
 .siteimage {
     float: left;
     width: 230px;
@@ -46,6 +50,10 @@ body {
     padding-left: 10px; /* Hack to dodge :hover issue. */
     position: relative; /* Hack to dodge :hover issue. */
     left: -10px; /* Hack to dodge :hover issue. */
+}
+
+.sitetitle a {
+    text-transform: lowercase;
 }
 
 .sitesubtitle {
@@ -80,6 +88,9 @@ body {
     left: -10px; /* Hack to dodge :hover issue. */
 }
 
+#postlist {
+    list-style: none;
+}
 .postinfo {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -162,8 +173,11 @@ sub {
 /* Paragraphs. */
 
 .article p {
-    line-height: 1.3em;
-    margin-bottom: 1.5em;
+    font-size: 18pt;		
+    line-height: 2em;
+    margin-bottom: 2em;
+    text-align: justify;
+    hyphens: auto;
 }
 
 /* Headers. */
@@ -239,7 +253,7 @@ sub {
 footer {
     bottom: 0;
     color: grey;
-    font-size: .7em;
+    font-size: 0.8em;
     height: 30px;
     position: absolute;
 }

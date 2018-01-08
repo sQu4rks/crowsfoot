@@ -4,9 +4,11 @@
 
 <section class="content">
 
-  <ol id="postlist">
+  <ul id="postlist">
 
     {% for article in articles_page.object_list %}
+    {% if article.category in IGNORE_CATEGORIES_ON_MAIN %}
+    {% else %}
     <li class="post">
         <header class="posttitle">
           <h3><a href="{{ SITEURL }}/{{ article.url }}"
@@ -25,9 +27,10 @@
 
         <div class="postsummary"> {{ article.summary }} </div>
     </li>
+    {% endif %}
     {% endfor %}
 
-  </ol><!-- /#post-list -->
+  </ul><!-- /#post-list -->
 
   {% include 'pagination.html' %}
 
