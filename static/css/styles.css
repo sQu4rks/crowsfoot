@@ -130,6 +130,7 @@ a {
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
 	-webkit-transition: all 0.3s ease-in-out 0s;
+	transform-origin: 0% 50%;
 	transition: all 0.3s ease-in-out 0s;
 }
 
