@@ -38,7 +38,7 @@ to `False`
 
 ## Screenshot
 
-![crowsfoot](https://raw.github.com/squ4rks/crowsfoot/master/screenshot.jpg)
+![crowsfoot](https://raw.github.com/squ4rks/crowsfoot/master/screenshot.png)
 
 ##Live Demo
 
