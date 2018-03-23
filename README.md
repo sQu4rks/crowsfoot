@@ -1,18 +1,11 @@
 # crowsfoot
 
-This is a fork with my modifications of @porterjamesj's awesome pelican theme. I 
-
-* Increased the font size and spacing between lines
-* Added justified text and hyphens
-
-The rest is the same as in the original theme. 
-
 A theme for the [Pelican](http://getpelican.com) static site generator.
 Looks good, puts words on the internet, doesn't do anything fancy.
 
 ## Installation
 
-`git clone https://github.com/porterjamesj/crowsfoot.git`
+`git clone https://github.com/sQu4rks/crowsfoot.git`
 
 Then set the pelican config variable `THEME` to the cloned path.
 
@@ -45,7 +38,7 @@ to `False`
 
 ## Screenshot
 
-![crowsfoot](https://raw.github.com/porterjamesj/crowsfoot/master/screenshot.jpg)
+![crowsfoot](https://raw.github.com/squ4rks/crowsfoot/master/screenshot.jpg)
 
 ##Live Demo
 
