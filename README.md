@@ -44,6 +44,9 @@ to `False`
 
 [my website](http://marcel.nlogn.org/)
 
+## Attribution 
+
+The theme was originally developed by @porterjamesj
 ## License
 
 MIT
