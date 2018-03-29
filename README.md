@@ -22,6 +22,8 @@ services by defining the appropriate config variables:
 * `TWITTER_ADDRESS`
 * `FB_ADDRESS` (Facebook)
 
+If you want to use [IndieAuth](https://indieauth.com/) you can set `USE_INDIEAUTH=True` in `pelicanconf.py`. 
+
 An RSS icon will also show on the nav if `FEED_RSS` is set.
 
 There are a few other config variables you should probably set
