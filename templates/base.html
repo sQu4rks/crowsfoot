@@ -10,9 +10,20 @@
       <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/icons.css"/>
       <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/styles.css"/>
       <meta charset="utf-8" />
-      {% for title, link in SOCIAL %}
-      <link class="u-url" rel="me" href="{{ link }}"/>
-      {% endfor %}
+      {% if USE_INDIEAUTH %}
+      	{% for title, link in SOCIAL %}
+      	<link rel="me" href="{{ link }}"/>
+      	{% endfor %}
+	{% if GITHUB_ADDRESS %}
+	<link rel="me" href="{{ GITHUB_ADDRESS }}" />
+	{% endif %}
+	{% if TWITTER_ADDRESS %}
+	<link rel="me" href="{{ TWITTER_ADDRESS }}" />
+	{% endif %}
+	{% if INSTAGRAM_ADDRESS %}
+	<link rel="me" href="{{ INSTAGRAM_ADDRESS }}" />
+	{% endif %}
+      {% endif %}
       {% if FEED_ATOM %}
         <link href="/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
       {% endif %}
@@ -55,16 +66,16 @@
               <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
             {% endif %}
             {% if GITHUB_ADDRESS %}
-              <li><a class="nodec icon-github" rel="me" href="{{ GITHUB_ADDRESS }}"></a></li>
+              <li><a class="nodec icon-github" href="{{ GITHUB_ADDRESS }}"></a></li>
             {% endif %}
             {% if SO_ADDRESS %}
-              <li><a class="nodec icon-stackoverflow" rel="me" href="{{ SO_ADDRESS }}"></a></li>
+              <li><a class="nodec icon-stackoverflow"  href="{{ SO_ADDRESS }}"></a></li>
             {% endif %}
             {% if TWITTER_ADDRESS %}
-              <li><a class="nodec icon-twitter" rel="me" href="{{ TWITTER_ADDRESS }}"></a></li>
+              <li><a class="nodec icon-twitter"  href="{{ TWITTER_ADDRESS }}"></a></li>
             {% endif %}
             {% if FB_ADDRESS %}
-              <li><a class="nodec icon-facebook" rel="me" href="{{ FB_ADDRESS }}"></a></li>
+              <li><a class="nodec icon-facebook" href="{{ FB_ADDRESS }}"></a></li>
             {% endif %}
             {% if FEED_RSS %}
               <li><a class="nodec icon-rss" href="/{{ FEED_RSS }}"></a></li>
