@@ -49,6 +49,16 @@ to `False`
 ## Attribution 
 
 The theme was originally developed by @porterjamesj
+
+### Hall of Fame 
+
+* @porterjamesj
+* @sQu4rks
+* @TinaHeiligers
+* @mabkenar
+* @vaibhavsagar
+* @rparrapy
+
 ## License
 
 MIT
