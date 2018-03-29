@@ -52,12 +52,12 @@ The theme was originally developed by @porterjamesj
 
 ### Hall of Fame 
 
-* @porterjamesj
-* @sQu4rks
-* @TinaHeiligers
-* @mabkenar
-* @vaibhavsagar
-* @rparrapy
+* [@porterjamesj](https://github.com/porterjamesj)
+* [@sQu4rks](https://github.com/sQu4rks)
+* [@TinaHeiligers](https://github.com/TinaHeiligers)
+* [@mabkenar](https://github.com/mabkenar)
+* [@vaibhavsagar](https://github.com/vaibhavsagar)
+* [@rparrapy](https://github.com/rparrapy)
 
 ## License
 
